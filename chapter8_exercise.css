@@ -9,17 +9,17 @@ main{
   margin: 50px auto;
 }
 
-.list-item{
+.item-list{
+  margin-bottom: 50px;
+}
+
+.item{
   list-style: none;
   padding: 20px;
 }
 
-.list-item:nth-child(odd){
-  background-color: #f7f7f7;
-}
-
-.list-item:last-child{
-  margin-bottom: 50px;
+.item:nth-child(odd){
+  background-color: #EEE;
 }
 
 .box-list{
@@ -30,24 +30,19 @@ main{
 .box{
   width: 30%;
   height: 200px;
-  background-color: #FFFF00;
-  margin: 0 5% 40px 0;
+  background-color: #FFD700;
+  margin-right:5% ;
+  margin-bottom: 40px;
 }
 
-.box:nth-child(1){
-  background-color: orange;
-}
-
-.box:nth-child(5){
-  background-color: orange;
-}
-
-.box:nth-child(9){
-  background-color: orange;
+.box:first-child,
+.box:nth-child(5),
+.box:last-child{
+  background-color: #FF8C00;
 }
 
 .box:nth-child(3n){
-  margin: 0 0 40px 0;
+  margin-right: 0;
 }
 
 .box:last-child(-n+3){
